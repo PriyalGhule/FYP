@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        
+            <div id="top-bar"><div id="main-text">E-Partogram</div><img id="tool" src="http://127.0.0.1:8000/static/1.png"></div>
+            <div  id="side-box">
+               <br>
+               <label> Sign up</label><br><br>
+               <div id="inside-sidebox">
+            <form action="" method="post">
+                {% csrf_token %}
+           Enter Email :  <input type="email" id="email", name="email"><br><br>
+           Enter Phone :  <input type="text" id="phone" name="phone"><br><br>
+           Enter Password :  <input  id="password" name="password"><br><br>
+           Enter Role :  <input type="text" name="role"><br><br>
+           <button id="link" type="submit" > Signup</button>
+           <a href="http://127.0.0.1:8000/login/"> Go to login page</a>
+           {% for message in messages %}
+           <h1>{{ message }}</h1>
+           {% endfor %}
+            </form></div></div>
+        </body>
+        </html
+        
+        
