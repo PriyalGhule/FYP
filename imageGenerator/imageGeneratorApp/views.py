@@ -69,4 +69,14 @@ def loginView(request):
             return redirect("login")
     return render(request,"login.html")
 
+def home(request):
+    return render(request,"home.html")
 
+def landing(request):
+    return render(request,"landing.html")
+
+def about(request):
+    return render(request,"about.html")
+
+def profile(request):
+    return render(request,"profile.html")

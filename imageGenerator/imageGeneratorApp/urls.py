@@ -7,6 +7,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('signup/',views.signup,name='signup'),
     path('login/',views.loginView, name='login'),
+     path("home/",views.home,name="home"),
+    path("",views.landing,name="landing"),
+    path("about/",views.about, name="about"),
+    path("profile/",views.profile, name="profile"),
 
     #Password_Change
     path("password_change/", auth_views.PasswordChangeView.as_view(), name="password_change"),
